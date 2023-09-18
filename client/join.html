@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full max-h-full">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cool Chat</title>
+        <!-- Import Dependencies -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./join.js" defer></script>
+        <style>
+            * {font-family: 'Poppins', sans-serif;}
+            body {
+                background-image: url("waves.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="max-w-xl bg-zinc-900 mx-auto text-gray-50 max-h-full h-full flex flex-col justify-center">
+        <h1 class="block text-4xl w-full font-bold">Cool Chat <span class="font-normal text-base text-gray-400">By Sameer Murthy</span></h1>
+        <form id="join" class="w-full">
+            <input id="room" name="elroom" autocomplete="off" class="my-3 block w-full bg-zinc-800 px-4 py-3 rounded-xl mr-2 outline-0 ring ring-transparent focus:ring-blue-700 transition" placeholder="Room ID - leave blank for random" pattern="^[a-z0-9]*$" title="Only numbers and lowercase letters are allowed.">
+            <input id="user" name="eluser" autocomplete="nickname" class="my-3 block w-full bg-zinc-800 px-4 py-3 rounded-xl mr-2 outline-0 ring ring-transparent focus:ring-blue-700 transition" placeholder="Name" required pattern="^[a-zA-Z0-9]*$" title="Only numbers and letters allowed.">
+            <button class="mb-16 my-3 block w-full bg-blue-700 px-4 py-3 rounded-xl hover:bg-blue-800 transition"> Enter </button>
+        </form>
+    </body>
+</html>
